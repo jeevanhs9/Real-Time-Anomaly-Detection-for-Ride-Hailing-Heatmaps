@@ -1,9 +1,11 @@
-import { beforeEach, describe, expect, it } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { fireEvent, render, screen } from '@testing-library/react'
 import { useTelemetryStore } from '../store/telemetryStore'
 import AlertFeed from '../components/alerts/AlertFeed'
 
 describe('AlertFeed', () => {
+  afterEach(() => { vi.restoreAllMocks() })
+
   beforeEach(() => {
     useTelemetryStore.setState({
       alerts: [{
@@ -51,5 +53,16 @@ describe('AlertFeed', () => {
       name: /critical alert at Koramangala/i,
     }))
     expect(useTelemetryStore.getState().selectedHex).toBe('hex-1')
+  })
+
+  it('uses unique React keys when an event appears more than once in the feed', () => {
+    const consoleError = vi.spyOn(console, 'error').mockImplementation(() => {})
+    const duplicate = useTelemetryStore.getState().alerts[0]
+    useTelemetryStore.setState({ alerts: [duplicate, duplicate] })
+
+    render(<AlertFeed />)
+
+    expect(screen.getAllByRole('button', { name: /critical alert at Koramangala/i })).toHaveLength(2)
+    expect(consoleError.mock.calls.some((call) => String(call[0]).includes('same key'))).toBe(false)
   })
 })

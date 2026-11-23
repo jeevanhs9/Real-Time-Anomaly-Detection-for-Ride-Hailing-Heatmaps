@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import { useTelemetryStore, type SimSpeed } from '../../store/telemetryStore'
+import { SCENARIOS, useTelemetryStore, type SimSpeed } from '../../store/telemetryStore'
 import { simControl } from '../../lib/api'
-import ScenarioDropdown from './ScenarioDropdown'
 
 const SPEEDS: SimSpeed[] = [1, 10, 60, 300]
 
 export default function SimulationControls() {
   const paused   = useTelemetryStore((s) => s.paused)
   const speed    = useTelemetryStore((s) => s.speed)
+  const activeScenarios = useTelemetryStore((s) => s.activeScenarios)
   const setPaused = useTelemetryStore((s) => s.setPaused)
   const setSpeed  = useTelemetryStore((s) => s.setSpeed)
 
@@ -77,7 +77,14 @@ export default function SimulationControls() {
 
       <span className="dock-divider" aria-hidden="true" />
 
-      <ScenarioDropdown />
+      <div className="scenario-status" aria-label="Scenario status">
+        <span className="dock-label">Scenario</span>
+        <strong>
+          {activeScenarios.length === 0
+            ? 'None active'
+            : `${SCENARIOS[activeScenarios[0]]}${activeScenarios.length > 1 ? ` +${activeScenarios.length - 1}` : ''}`}
+        </strong>
+      </div>
 
       <span className={`simulation-state ${paused ? 'is-paused' : 'is-running'}`}>
         <i aria-hidden="true" />{paused ? 'Paused' : 'Running'}

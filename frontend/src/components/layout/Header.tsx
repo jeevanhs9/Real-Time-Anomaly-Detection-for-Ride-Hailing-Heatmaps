@@ -6,7 +6,7 @@ function StatusBadge({ connected }: { connected: boolean }) {
   return (
     <span className={`connection-status ${connected ? 'is-connected' : 'is-disconnected'}`} role="status">
       <span className="connection-dot" aria-hidden="true" />
-      <span>{connected ? 'Live stream' : 'Reconnecting'}</span>
+      <span>{connected ? 'LIVE' : 'Connecting'}</span>
     </span>
   )
 }

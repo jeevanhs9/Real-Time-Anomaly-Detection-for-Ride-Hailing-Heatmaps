@@ -7,16 +7,16 @@ import {
 
 describe('getSeverityColor', () => {
   it('returns green RGBA for NORMAL', () => {
-    expect(getSeverityColor('NORMAL')).toEqual([12, 165, 85, 160])
+    expect(getSeverityColor('NORMAL')).toEqual([12, 165, 85, 62])
   })
   it('returns blue RGBA for MEDIUM', () => {
-    expect(getSeverityColor('MEDIUM')).toEqual([39, 110, 241, 180])
+    expect(getSeverityColor('MEDIUM')).toEqual([39, 110, 241, 145])
   })
   it('returns orange RGBA for HIGH', () => {
-    expect(getSeverityColor('HIGH')).toEqual([252, 153, 60, 210])
+    expect(getSeverityColor('HIGH')).toEqual([252, 153, 60, 185])
   })
   it('returns red RGBA for CRITICAL', () => {
-    expect(getSeverityColor('CRITICAL')).toEqual([244, 59, 0, 240])
+    expect(getSeverityColor('CRITICAL')).toEqual([244, 59, 0, 225])
   })
 })
 

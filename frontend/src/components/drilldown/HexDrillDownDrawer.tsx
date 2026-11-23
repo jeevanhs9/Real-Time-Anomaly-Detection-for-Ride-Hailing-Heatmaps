@@ -72,6 +72,7 @@ export default function HexDrillDownDrawer() {
         <div className="detail-drawer-header" style={{ borderTopColor: severityColor }}>
           <div className="detail-title-row">
             <div className="detail-title-copy">
+              <span className="eyebrow">SELECTED H3 CELL</span>
               <div className="detail-title-line">
                 <h2 id="detail-drawer-title">
                   {locality}
@@ -135,7 +136,10 @@ export default function HexDrillDownDrawer() {
             <div className="snapshot-list">
               {[
                 ['Demand',  cell.demand],
+                ['Expected', cell.lgbm_pred.toFixed(1)],
                 ['Supply',  cell.supply],
+                ['Surge',   `${cell.surge.toFixed(2)}×`],
+                ['Avg ETA', `${cell.avg_eta_minutes.toFixed(1)} min`],
                 ['Rain',    cell.is_rainy ? `${cell.rainfall_mm.toFixed(1)} mm/h` : 'None'],
               ].map(([lbl, val]) => (
                 <div key={String(lbl)}>
