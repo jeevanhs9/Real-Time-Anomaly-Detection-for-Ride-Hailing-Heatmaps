@@ -1,0 +1,244 @@
+{
+  "families": [
+    "UberMove",
+    "UberMoveText"
+  ],
+  "scale": {
+    "heading-1": {
+      "fontFamily": "UberMove",
+      "fontSize": "88px",
+      "fontWeight": "700",
+      "lineHeight": null,
+      "source": "css"
+    },
+    "heading-2": {
+      "fontFamily": "UberMove",
+      "fontSize": "58px",
+      "fontWeight": "700",
+      "lineHeight": null,
+      "source": "css"
+    },
+    "heading-3": {
+      "fontFamily": "UberMove",
+      "fontSize": "52px",
+      "fontWeight": "700",
+      "lineHeight": null,
+      "source": "css"
+    },
+    "body": {
+      "fontFamily": "UberMoveText",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": null,
+      "source": "css"
+    },
+    "caption": {
+      "fontFamily": "UberMoveText",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": null,
+      "source": "css"
+    }
+  },
+  "fontFaces": [
+    {
+      "family": "Book",
+      "src": "https://www.uber.com/_static/d9fefb2e7848440e.woff",
+      "format": "woff",
+      "weight": "400"
+    },
+    {
+      "family": "Book",
+      "src": "https://www.uber.com/_static/c7d2487e86a01259.woff2",
+      "format": "woff2",
+      "weight": "400"
+    },
+    {
+      "family": "Medium",
+      "src": "https://www.uber.com/_static/4a6ba14eeb82d398.woff",
+      "format": "woff",
+      "weight": "400"
+    },
+    {
+      "family": "Medium",
+      "src": "https://www.uber.com/_static/373acd359b809a36.woff2",
+      "format": "woff2",
+      "weight": "400"
+    },
+    {
+      "family": "NarrowBook",
+      "src": "https://www.uber.com/_static/72265bee6edcde38.woff",
+      "format": "woff",
+      "weight": "400"
+    },
+    {
+      "family": "NarrowBook",
+      "src": "https://www.uber.com/_static/4092f014767a0c42.woff2",
+      "format": "woff2",
+      "weight": "400"
+    },
+    {
+      "family": "NarrowMedium",
+      "src": "https://www.uber.com/_static/3b7b2d393828f966.woff",
+      "format": "woff",
+      "weight": "400"
+    },
+    {
+      "family": "NarrowMedium",
+      "src": "https://www.uber.com/_static/d03e099b908c23f5.woff2",
+      "format": "woff2",
+      "weight": "400"
+    },
+    {
+      "family": "NarrowNews",
+      "src": "https://www.uber.com/_static/d35e4f7be34dbdf1.woff",
+      "format": "woff",
+      "weight": "400"
+    },
+    {
+      "family": "NarrowNews",
+      "src": "https://www.uber.com/_static/3ead8fe086dcc03b.woff2",
+      "format": "woff2",
+      "weight": "400"
+    },
+    {
+      "family": "NarrowThin",
+      "src": "https://www.uber.com/_static/56bde4d6d985fd33.woff",
+      "format": "woff",
+      "weight": "400"
+    },
+    {
+      "family": "NarrowThin",
+      "src": "https://www.uber.com/_static/22ff2ed7e89a1893.woff2",
+      "format": "woff2",
+      "weight": "400"
+    },
+    {
+      "family": "News",
+      "src": "https://www.uber.com/_static/7dee2ff8254c25e7.woff",
+      "format": "woff",
+      "weight": "400"
+    },
+    {
+      "family": "News",
+      "src": "https://www.uber.com/_static/eaaab0415f3c894a.woff2",
+      "format": "woff2",
+      "weight": "400"
+    },
+    {
+      "family": "Thin",
+      "src": "https://www.uber.com/_static/3bafb784fdbf1412.woff",
+      "format": "woff",
+      "weight": "400"
+    },
+    {
+      "family": "Thin",
+      "src": "https://www.uber.com/_static/4971a684a2006b0b.woff2",
+      "format": "woff2",
+      "weight": "400"
+    },
+    {
+      "family": "UberMove",
+      "src": "https://tb-static.uber.com/prod/uber-static/UberMove-Light.woff2",
+      "format": "woff2",
+      "weight": "200"
+    },
+    {
+      "family": "UberMove",
+      "src": "https://tb-static.uber.com/prod/uber-static/UberMove-Light.woff",
+      "format": "woff2",
+      "weight": "200"
+    },
+    {
+      "family": "UberMove",
+      "src": "https://tb-static.uber.com/prod/uber-static/UberMove-Regular.woff2",
+      "format": "woff2",
+      "weight": "400"
+    },
+    {
+      "family": "UberMove",
+      "src": "https://tb-static.uber.com/prod/uber-static/UberMove-Regular.woff",
+      "format": "woff2",
+      "weight": "400"
+    },
+    {
+      "family": "UberMove",
+      "src": "https://tb-static.uber.com/prod/uber-static/UberMove-Medium.woff2",
+      "format": "woff2",
+      "weight": "500"
+    },
+    {
+      "family": "UberMove",
+      "src": "https://tb-static.uber.com/prod/uber-static/UberMove-Medium.woff",
+      "format": "woff2",
+      "weight": "500"
+    },
+    {
+      "family": "UberMove",
+      "src": "https://tb-static.uber.com/prod/uber-static/UberMove-Bold.woff2",
+      "format": "woff2",
+      "weight": "600"
+    },
+    {
+      "family": "UberMove",
+      "src": "https://tb-static.uber.com/prod/uber-static/UberMove-Bold.woff",
+      "format": "woff2",
+      "weight": "600"
+    },
+    {
+      "family": "UberMoveText",
+      "src": "https://tb-static.uber.com/prod/uber-static/UberMoveText-Light.woff2",
+      "format": "woff2",
+      "weight": "200"
+    },
+    {
+      "family": "UberMoveText",
+      "src": "https://tb-static.uber.com/prod/uber-static/UberMoveText-Light.woff",
+      "format": "woff2",
+      "weight": "200"
+    },
+    {
+      "family": "UberMoveText",
+      "src": "https://tb-static.uber.com/prod/uber-static/UberMoveText-Regular.woff2",
+      "format": "woff2",
+      "weight": "400"
+    },
+    {
+      "family": "UberMoveText",
+      "src": "https://tb-static.uber.com/prod/uber-static/UberMoveText-Regular.woff",
+      "format": "woff2",
+      "weight": "400"
+    },
+    {
+      "family": "UberMoveText",
+      "src": "https://tb-static.uber.com/prod/uber-static/UberMoveText-Medium.woff2",
+      "format": "woff2",
+      "weight": "500"
+    },
+    {
+      "family": "UberMoveText",
+      "src": "https://tb-static.uber.com/prod/uber-static/UberMoveText-Medium.woff",
+      "format": "woff2",
+      "weight": "500"
+    },
+    {
+      "family": "UberMoveText",
+      "src": "https://tb-static.uber.com/prod/uber-static/UberMoveText-Bold.woff2",
+      "format": "woff2",
+      "weight": "600"
+    },
+    {
+      "family": "UberMoveText",
+      "src": "https://tb-static.uber.com/prod/uber-static/UberMoveText-Bold.woff",
+      "format": "woff2",
+      "weight": "600"
+    }
+  ],
+  "rules": {
+    "maxSizesPerScreen": 4,
+    "headingWeightRange": "600-700",
+    "bodyWeight": 400,
+    "lineHeightBody": 1.5,
+    "lineHeightHeading": 1.2
+  }
+}

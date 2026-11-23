@@ -1,0 +1,98 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "core": {
+    "text-primary": {
+      "value": "#111111",
+      "role": "text-primary",
+      "name": "base-background-statelayer-hover"
+    },
+    "background": {
+      "value": "#ffffff",
+      "role": "background",
+      "name": "base-background-material-primary"
+    },
+    "text-muted": {
+      "value": "#525252",
+      "role": "text-muted",
+      "name": "base-border-inverse-subtle"
+    },
+    "border": {
+      "value": "#333333",
+      "role": "border"
+    },
+    "surface": {
+      "value": "#f6f6f6",
+      "role": "surface"
+    }
+  },
+  "status": {
+    "danger": {
+      "value": "#fee6e1",
+      "role": "danger",
+      "name": "base-error-background-disabled"
+    }
+  },
+  "extended": {
+    "base-background-overlay-art": {
+      "value": "#000000",
+      "role": "unknown",
+      "name": "base-background-overlay-art"
+    },
+    "base-border-subtle": {
+      "value": "#c4c4c4",
+      "role": "unknown",
+      "name": "base-border-subtle"
+    },
+    "base-background-disabled": {
+      "value": "#474747",
+      "role": "unknown",
+      "name": "base-background-disabled"
+    },
+    "base-info-border-subtle": {
+      "value": "#777777",
+      "role": "unknown",
+      "name": "base-info-border-subtle"
+    },
+    "base-background-track": {
+      "value": "#5f5f5f",
+      "role": "unknown",
+      "name": "base-background-track"
+    },
+    "base-border-inverse-subtle": {
+      "value": "#b7b7b7",
+      "role": "unknown",
+      "name": "base-border-inverse-subtle"
+    },
+    "color-0000ee": {
+      "value": "#0000ee",
+      "role": "info"
+    },
+    "base-background-inverse-statelayer-hover": {
+      "value": "#ececec",
+      "role": "unknown",
+      "name": "base-background-inverse-statelayer-hover"
+    },
+    "color-068bee": {
+      "value": "#068bee",
+      "role": "unknown"
+    },
+    "base-background-material-primary": {
+      "value": "#272727",
+      "role": "unknown",
+      "name": "base-background-material-primary"
+    },
+    "color-276ef1": {
+      "value": "#276ef1",
+      "role": "unknown"
+    },
+    "base-error-background-statelayer-hover": {
+      "value": "#31110b",
+      "role": "unknown",
+      "name": "base-error-background-statelayer-hover"
+    }
+  },
+  "meta": {
+    "theme": "light",
+    "extracted": "2026-11-16"
+  }
+}

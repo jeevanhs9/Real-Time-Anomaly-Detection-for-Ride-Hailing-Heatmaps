@@ -1,0 +1,40 @@
+version: "3.9"
+
+services:
+
+  # ── Backend (FastAPI + Uvicorn) ───────────────────────────────────────────
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: heatmap_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount the data directory so trained models and artefacts persist
+      - ./data:/app/data:ro
+    environment:
+      - HEATMAP_HOST=0.0.0.0
+      - HEATMAP_PORT=8000
+      - HEATMAP_TICK_INTERVAL_SECS=2.0
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/v1/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+
+  # ── Frontend (Nginx serving the Vite production build) ───────────────────
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: heatmap_frontend
+    ports:
+      - "80:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
